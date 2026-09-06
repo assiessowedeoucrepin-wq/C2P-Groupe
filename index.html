@@ -1,130 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>site web</title>
+    <title>connexion wifi_formulaire d'accès </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <h1>Formulaire d'inscription</h1>
-   <fieldset>
-       <legend>Informations personnelles</legend>
-     <form>
+    <h1>Connexion wifi</h1>
+    <div class="carte">
+        <fieldset>
+            <form action="#" method="#"> 
         <label for="nom">Nom :</label>
-        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom">
+        <input type="text" id="Nom" name="Nom" placeholder=" veuillez entrer votre nom">
         <br><br>
-        <label for="prenom">Prénom :</label>
-        <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom">
+         <label for="prenom">Prenom :</label>
+        <input type="text" id="Prenom" name="Prenom" placeholder=" veuillez entrer votre prénom">
         <br><br>
-        <label for="sexe">Sexe :</label>
-        <input type="radio" id="sexe" name="sexe" value="masculin">
-        <label for="sexe">Masculin</label>
-        <input type="radio" id="sexe" name="sexe" value="feminin">
-        <label for="sexe">Féminin</label>
+         <label for="email">email :</label>
+        <input type="email" id="email" name="email" placeholder=" veuillez entrer votre email">
         <br><br>
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email" placeholder="Entrez votre email">
+        <label for="ticket"> ticket wifi :</label>
+        <select id="ticket" name="ticket">
+            <option value="100FCFA">ticket de 100FCFA -3heures</option>
+            <option value="200FCFA">ticket de 200 FCFA -24heures</option>
+            <option value="500FCFA">ticket de 500 FCFA -1semaine</option>
+            <option value="2000FCFA">ticket de 2000 FCFA -1mois</option>
+        </select>
         <br><br>
-        <label for="date de  naissance">Date de naissance :</label>
-        <input type="date" id="date de  naissance" name="date de  naissance" placeholder="Entrez votre date de naissance">
+        <label for="heure_début">Heure de début de connexion :</label>
+        <input type="time" id="heure_début" name="heure_début" placeholder=" veuillez entrer l'heure de début de connexion">
         <br><br>
-        <label for="telephone">Téléphone :</label>
-        <input type="tel" id="telephone" name="telephone" list="telephone-list">
-        <datalist id="telephone-list">
-            <option value="+33 (france)">
-            <option value="+34 (espagne)">
-            <option value="+39 (italie)">
-            <option value="+49 (allemagne)">
-            <option value="+44 (royaume-Uni)">
-            <option value="+1 (États-Unis)">
-            <option value="+228 (togo)">
-            <option value="+229 (bénin)">
-            <option value="+237 (cameroun)">
-            <option value="+221 (sénégal)">
-            <option value="+223 (mali)">
-        </datalist>
+        <p><small>la  connexion prend fin automatiquement à la durée indiquée par votre ticket,à partir de l'heure de début</small> </p>
         <br><br>
-        
-        <label for="pays"> choisissez ou taper votre Pays :</label>
-        <input type="text" id="pays" name="pays" list="pays-list" >
-        <datalist id="pays-list">
-            <option value="France">
-            <option value="Espagne">
-            <option value="Italie">
-            <option value="Allemagne">
-            <option value="Royaume-Uni">
-            <option value="États-Unis">
-            <option value="Togo">
-            <option value="Bénin">
-            <option value="Cameroun">
-            <option value="Sénégal">
-            <option value="Mali">
-            <option value="Niger">
-            <option value="Burkina Faso">
-            <option value="Côte d'Ivoire">  
-            <option value="Ghana">
-                <option value="Guinée">
-            <option value="Sierra Leone">
-            <option value="Libéria">
-            <option value="Cap-Vert">
-            <option value="Mauritanie">
-                
-        </datalist>
+        <input type="submit" value="Se connecter">
        
-        <br><br>
-        
+
     </form>
     </fieldset>
-    <fieldset>
-        <legend>information d'inscription</legend>
-    <form>
-        <label for="type de participation">type de participation :</label>
-        <input type="radio" id="type de participation" name="type de participation" value="en ligne">
-        <label for="type de participation">Séminaire</label>
-        <input type="radio" id="type de participation" name="type de participation" value="en presentiel">
-        <label for="type de participation">Atelier</label>
-        <input type="radio" id="type de participation" name="type de participation" value="conférence">
-        <label for="type de participation">Conférence</label>
-        <br><br>
-        <label for="date de paiyement ">Date  de paiyement:</label>
-        <input type="date" id="date de paiyement " name="date de paiyement "  >
-        <br><br>
-        
-        <label for="montant a regler">montant à régler :</label>
-        <select>
-            <option value="100">100O FCFA</option>
-            <option value="200">200O FCFA</option>
-            <option value="300">300O FCFA</option>
-            <option value="400">400O FCFA</option>
-            <option value="500">500O FCFA</option>
-        </select>
-        <br><br>
-        <label for="heure de paiement">Heure de paiement :</label>
-        <input type="time" id="heure de paiement" name="heure de paiement" placeholder="Entrez l'heure de paiement">
-        <br><br>
-        <label for="mode de paiement">Mode de paiement :</label>
-        <select id="mode de paiement" name="mode de paiement">
-            <option value="virement">Virement</option>
-            <option value="cheque">Chèque</option>
-            <option value="especes">Espèces</option>
-        </select>
-        <br><br>
-        
-    </form>
-    </fieldset>
-    <div class="buttons">
-        <button type="submit">Soumettre</button>
-        <button type="reset">Réinitialiser</button>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 Votre Entreprise. Tous droits réservés.</p>
-        <p>contact:93213229 </p>
-        <p>site web: www.votreentreprise.com</p>
-        <p> Chaque candidature est une nouvelle opportunité. Chaque entretien, un pas de plus vers votre avenir professionnel !</p>
-
-    </footer>
+</div>
     
     
 </body>

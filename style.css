@@ -1,20 +1,57 @@
 body{
-    background-image:url("images/Formulaire.jpg");
+    background:linear-gradient(#0d0221,#1a0b3d,#2e1065,#3d1a7a);
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-fieldset{
-    color:maroon;
-    background-color:lightblue;
-    
+.carte{
+    background: rgb(18, 141, 163);
+    max-width: 500px;
+    margin: 50px auto ;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px  #808080;
+}
+h1{
+    color:antiquewhite;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+label{
+    display: block;
+    color:beige;
+    font-weight:500;
+    margin-bottom: 8px;
+    margin-top: 15px;
+
+}
+input[type="text"],
+input [type="email"],
+input[type="time"],
+select{
+    width: 100%;
+    padding: 12px 15px;
+    border:1px solid black;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background: rgb(42, 30, 210);
+}
+input[type="submit"] {
+    width: 100%;
+    background: darkslategrey;
+    color:whitesmoke;
+    border:none;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: :1.1rem;
+    font-weight:500;
+    cursor: pointer;
+    margin-top:20px;
+
+}
+input[type="submit"] :hover{
+    background: deepskyblue;
 }
 
-h1{
-    color:indigo;
-    text-align:center;
-}
-.buttons{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-top: 20px;
-}
- 
