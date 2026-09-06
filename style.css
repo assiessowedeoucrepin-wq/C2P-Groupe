@@ -1,1 +1,20 @@
+body{
+    background-image:url("images/Formulaire.jpg");
+}
+fieldset{
+    color:maroon;
+    background-color:lightblue;
+    
+}
 
+h1{
+    color:indigo;
+    text-align:center;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+ 

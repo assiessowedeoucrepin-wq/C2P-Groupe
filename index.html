@@ -3,63 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulaire</title>
+    <title>site web</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <Fieldset>
-        <legend>Formulaire</legend>
-        <form>
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="nom" placeholder="votre nom">
-            <br>
-            <label for="prénom">prénom :</label>
-            <input type="text" id="prénom" name="prénom" placeholder="votre prénom">
-            <br>
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" placeholder="votre email">
-            <br>
-            <label for="sexe">Sexe :</label>
-           
-            <input type="radio" id="homme" name="sexe" value="homme">  
-            <label for="homme">Homme</label>
-            <input type="radio" id="femme" name="sexe" value="femme">
-            <label for="femme">Femme</label>
-            <br>
-            <label for="date_de_naissance">Date de naissance :</label>
-            <input type="date" id="date_de_naissance" name="date_de_naissance">
-            <br>
-            <label for="age">Age :</label>
-            <input type="number" id="age" name="age" placeholder="votre saisir age">
-            <br>
-            <label for="pays de provenance">pays de provenance :</label>
-            <select name="pays de provenance" id="pays de provenance">
-                <option value="france">France</option>
-                <option value="espagne">Espagne</option>
-                <option value="italie">Italie</option>
-                <option value="allemagne">Allemagne</option>
-                <option value="portugal">Portugal</option>
-               
-                </select>
-            
-            <br>
-            <label for="profession disponible">profession disponible :</label>
-            <input type="text" id="profession disponible" name="profession disponible" list="profession -disponible"> 
-            <datalist id="profession -disponible">
-                <option value="informaticien">
-                <option value="medecin">
-                <option value="ingenieur">
-                <option value="enseignant">
-                <option value="comptable">
-                    <option value="génie logiciel et système informatique">
-            </datalist>
-            </input>
-                        
-            
-        </form>
-    </Fieldset>
+     <h1>Formulaire d'inscription</h1>
+   <fieldset>
+       <legend>Informations personnelles</legend>
+     <form>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom">
+        <br><br>
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom">
+        <br><br>
+        <label for="sexe">Sexe :</label>
+        <input type="radio" id="sexe" name="sexe" value="masculin">
+        <label for="sexe">Masculin</label>
+        <input type="radio" id="sexe" name="sexe" value="feminin">
+        <label for="sexe">Féminin</label>
+        <br><br>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" placeholder="Entrez votre email">
+        <br><br>
+        <label for="date de  naissance">Date de naissance :</label>
+        <input type="date" id="date de  naissance" name="date de  naissance" placeholder="Entrez votre date de naissance">
+        <br><br>
+        <label for="telephone">Téléphone :</label>
+        <input type="tel" id="telephone" name="telephone" list="telephone-list">
+        <datalist id="telephone-list">
+            <option value="+33 (france)">
+            <option value="+34 (espagne)">
+            <option value="+39 (italie)">
+            <option value="+49 (allemagne)">
+            <option value="+44 (royaume-Uni)">
+            <option value="+1 (États-Unis)">
+            <option value="+228 (togo)">
+            <option value="+229 (bénin)">
+            <option value="+237 (cameroun)">
+            <option value="+221 (sénégal)">
+            <option value="+223 (mali)">
+        </datalist>
+        <br><br>
+        
+        <label for="pays"> choisissez ou taper votre Pays :</label>
+        <input type="text" id="pays" name="pays" list="pays-list" >
+        <datalist id="pays-list">
+            <option value="France">
+            <option value="Espagne">
+            <option value="Italie">
+            <option value="Allemagne">
+            <option value="Royaume-Uni">
+            <option value="États-Unis">
+            <option value="Togo">
+            <option value="Bénin">
+            <option value="Cameroun">
+            <option value="Sénégal">
+            <option value="Mali">
+            <option value="Niger">
+            <option value="Burkina Faso">
+            <option value="Côte d'Ivoire">  
+            <option value="Ghana">
+                <option value="Guinée">
+            <option value="Sierra Leone">
+            <option value="Libéria">
+            <option value="Cap-Vert">
+            <option value="Mauritanie">
+                
+        </datalist>
+       
+        <br><br>
+        
+    </form>
+    </fieldset>
+    <fieldset>
+        <legend>information d'inscription</legend>
+    <form>
+        <label for="type de participation">type de participation :</label>
+        <input type="radio" id="type de participation" name="type de participation" value="en ligne">
+        <label for="type de participation">Séminaire</label>
+        <input type="radio" id="type de participation" name="type de participation" value="en presentiel">
+        <label for="type de participation">Atelier</label>
+        <input type="radio" id="type de participation" name="type de participation" value="conférence">
+        <label for="type de participation">Conférence</label>
+        <br><br>
+        <label for="date de paiyement ">Date  de paiyement:</label>
+        <input type="date" id="date de paiyement " name="date de paiyement "  >
+        <br><br>
+        
+        <label for="montant a regler">montant à régler :</label>
+        <select>
+            <option value="100">100O FCFA</option>
+            <option value="200">200O FCFA</option>
+            <option value="300">300O FCFA</option>
+            <option value="400">400O FCFA</option>
+            <option value="500">500O FCFA</option>
+        </select>
+        <br><br>
+        <label for="heure de paiement">Heure de paiement :</label>
+        <input type="time" id="heure de paiement" name="heure de paiement" placeholder="Entrez l'heure de paiement">
+        <br><br>
+        <label for="mode de paiement">Mode de paiement :</label>
+        <select id="mode de paiement" name="mode de paiement">
+            <option value="virement">Virement</option>
+            <option value="cheque">Chèque</option>
+            <option value="especes">Espèces</option>
+        </select>
+        <br><br>
+        
+    </form>
+    </fieldset>
+    <div class="buttons">
+        <button type="submit">Soumettre</button>
+        <button type="reset">Réinitialiser</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Votre Entreprise. Tous droits réservés.</p>
+        <p>contact:93213229 </p>
+        <p>site web: www.votreentreprise.com</p>
+        <p> Chaque candidature est une nouvelle opportunité. Chaque entretien, un pas de plus vers votre avenir professionnel !</p>
+
+    </footer>
     
     
 </body>
 </html>
-
-
