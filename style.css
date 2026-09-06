@@ -27,7 +27,7 @@ label{
 
 }
 input[type="text"],
-input [type="email"],
+input[type="email"],
 input[type="time"],
 select{
     width: 100%;
@@ -36,7 +36,7 @@ select{
     border-radius: 10px;
     font-size: 1rem;
     box-sizing: border-box;
-    background: rgb(42, 30, 210);
+    background: rgb(5, 146, 101);
 }
 input[type="submit"] {
     width: 100%;
