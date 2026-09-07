@@ -1,8 +1,15 @@
 body{
-    background:linear-gradient(#0d0221,#1a0b3d,#2e1065,#3d1a7a);
-    min-height: 100vh;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: 
+    linear-gradient(rgba(13,2,33,0.75), rgba(46,16,101,0.75)),
+    url(images/connexion.jpg);
+  
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   min-height: 100vh;
+   margin: 0;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .carte{
     background: rgb(18, 141, 163);
@@ -27,7 +34,7 @@ label{
 
 }
 input[type="text"],
-input[type="email"],
+
 input[type="time"],
 select{
     width: 100%;
@@ -45,7 +52,7 @@ input[type="submit"] {
     border:none;
     padding: 15px;
     border-radius: 50px;
-    font-size: :1.1rem;
+    font-size: 1.1rem;
     font-weight:500;
     cursor: pointer;
     margin-top:20px;
@@ -53,5 +60,36 @@ input[type="submit"] {
 }
 input[type="submit"] :hover{
     background: deepskyblue;
+}
+.logo{
+    display: block;
+    margin: 0 auto 15px auto;
+    width: 200px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th{
+    background: #2563eb;
+    color:whitesmoke;
+}
+td{
+    background: wheat;
+}
+.icone-reseau{
+    width: 30px;
+    margin: 0 10px;
+}
+footer{
+    color:crimson;
+    text-align: center;
+}
+.Bienvenue{
+    text-align: center;
+    color:aliceblue;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
