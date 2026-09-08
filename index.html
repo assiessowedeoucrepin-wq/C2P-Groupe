@@ -1,76 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulaire d'inscription scolaire en ligne</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="images/Internet do coisas tecnologia refere para a… (1).jpg" alt="logo wifi" class="logo">
-        <h1>Connexion wifi</h1>
-        <p class="Bienvenue">"Bienvenue!connectez-vous en toute simplicité,où que vous soyez"</p>
-    <div class="carte">
-        <table>
-            <tr>
-                <th>Prix</th>
-                <th>durée</th>
-
-            </tr>
-            <tr>
-                <td>1OOFCFA</td>
-                <td>3 heures</td>
-               
-            </tr>
-            <tr>
-                <td>200FCFA</td>
-                <td>24heures</td>
-            </tr>
-            <tr>
-                <td>500FCFA</td>
-                <td>1semaine</td>
-            </tr>
-            <tr>
-                <td>2000FCFA</td>
-                <td>1Mois</td>
-            </tr>
-
-        </table>
-        <fieldset>
-            <form action="#" method="#"> 
+    <h1>Formulaire d'inscription</h1>
+   
+    <form action="#" method="#">
         <label for="nom">Nom :</label>
-        <input type="text" id="Nom" name="Nom" placeholder="👤  veuillez entrer votre nom">
-        <br><br>
-         <label for="prenom">Prenom :</label>
-        <input type="text" id="Prenom" name="Prenom" placeholder="👤 veuillez entrer votre prénom">
-        <br><br>
-        
-        <label for="ticket"> 🎫ticket wifi :</label>
-        <select id="ticket" name="ticket">
-            <option value="100FCFA">ticket de 100FCFA -3heures</option>
-            <option value="200FCFA">ticket de 200 FCFA -24heures</option>
-            <option value="500FCFA">ticket de 500 FCFA -1semaine</option>
-            <option value="2000FCFA">ticket de 2000 FCFA -1mois</option>
-        </select>
-        <br><br>
-        <label for="heure_début">⏱️Heure de début de connexion :</label>
-        <input type="time" id="heure_début" name="heure_début" placeholder=" veuillez entrer l'heure de début de connexion">
-        <br><br>
-        <p><small>la  connexion prend fin automatiquement à la durée indiquée par votre ticket,à partir de l'heure de début</small> </p>
-        <br><br>
-        <input type="submit" value=" connecter vous">
-       
+        <input type="text" id="nom" name="nom" placeholder="veuillez saisir votre nom">
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" placeholder="veuillez saisir votre prénom">
+
+        <label for="ecole_origine">École d'origine :</label>
+        <input type="text" id="ecole_origine" name="ecole_origine" placeholder="Veuillez donner votre école de provenance">
+
+        <label for="telephone">Téléphone :</label>
+        <input type="tel" id="telephone" name="telephone" placeholder="veuillez saisir votre numéro de téléphone">
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" placeholder="veuillez saisir votre email">
+        <label for="moyenne">Moyenne Génerale:</label>
+        <input type="number" id="moyenne" name="moyenne" placeholder="veuillez donner votre moyenne" min="0" max="20" step="0.01">
+        <input type="submit" value="Envoyer ma demande">
 
     </form>
-    </fieldset>
-</div>
-<footer>
-    <p>&copy;2026 connexion wifi - Tous droits réservés</p>
-    <p>
-        <a href="https://wa.me/22893213229"><img src="images/Whatsapp Logo png.jpg" alt="whatsapp" class="icone-reseau"></a>
-       
-    </p>
-</footer>
-    
+   
 </body>
 </html>
